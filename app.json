@@ -16,15 +16,32 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.seuorg.btclassicspp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "permissions": [
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_ADVERTISE"
+      ],
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "with-rn-bluetooth-classic"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "cd553c5b-9a23-42e2-b025-771ef49ca3ef"
+      }
     }
   }
 }
