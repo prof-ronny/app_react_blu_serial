@@ -130,7 +130,7 @@ export default function App() {
         renderItem={({ item }) => (
           <TouchableOpacity
             style={{ padding: 8, borderWidth: 1, borderColor: '#999', borderRadius: 12, marginRight: 8 }}
-            onPress={() => {/* vamos conectar na próxima etapa */ }}
+            onPress={() => {connectTo(item) }}
           >
             <Text>{item.name || item.address}</Text>
           </TouchableOpacity>
